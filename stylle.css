@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(19, 15, 32);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 60px;
+    text-align: center;
+}
+/* desinning lists */
+.task{
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    background:rgba(172, 214, 221, .25);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; 
+    border-bottom: 3px solid #fff;   
+}
+.task p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+
+.fa-solid {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    transition: .5s  ease;
+}
+.fa-solid:hover{
+    transform: scale(1.2);
+    color: rgb(109, 8, 8);
+    cursor: pointer;
+}
+/* creating new  lists */
+h2{
+    color: #fff;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+form{
+    
+    text-align: center;
+    margin-bottom: 70px;
+}
+input{
+    padding: 10px 20px;
+    border-radius: 6px;
+    width:35vw;
+    font-size: 21px;
+    color: rgb(118, 17, 17);
+    font-weight: 700;
+    text-align: center;
+}
+button 
+{
+    all:unset;
+    color: white;
+}
+.fa-upload{
+    position: relative;
+    top:6px ;
+    transition: .2s ease;
+}
+
+/* Start footer  */
+
+.foot{
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background: rgb(7, 6, 22);
+    
+}
+
+.foot p{
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;   
+    
+} 
+/* End footer  */
+
+/* css for classes in js  */
+.disply_none{
+    display: none ;
+}
+
+.fa-heart{
+    color:red;
+}
+.orange{
+    color: orange;
+}
+
+
+/* for responsive design*/
+
+@media (max-width:400px){
+body {
+    font-size: 8px;
+}
+.task{
+    font-size: 10px;
+}
+.task p{
+    font-size: 10px;
+}
+
+.fa-solid{
+    font-size: 1rem;
+    margin-left: 5px;
+}
+h1,h2 {
+    font-size: 20px;
+}
+input{
+    padding: 5px;
+    font-size: 10px;
+}
+}
+
